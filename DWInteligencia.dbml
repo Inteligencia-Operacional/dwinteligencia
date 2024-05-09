@@ -3803,8 +3803,12 @@ Table DBO.TB_NAVITAIRE_GATE_LIVE{
 	ACTUAL_DEPARTURE_GATE varchar(50) [null]
 	FLIGHT_KEY_UTC nvarchar(255) [null]
 	UPDATE_TABLE_UTC_DTIME datetime [not null]
-	note: "TABELA TB_NAVITAIRE_GATE_LIVE DO SCHEMA DBO"
-} 
+	note: '''
+    TABELA TB_NAVITAIRE_GATE_LIVE DO SCHEMA DBO
+    
+    [Modelo ETL](https://voeazul.sharepoint.com/:f:/r/sites/IntelignciaOperacional2.0/Shared%20Documents/Documenta%C3%A7%C3%A3o/DWINTELIGENCIA/01-Navitaire/16-CL_NAVITAIRE_GATE_ONLINE?csf=1&web=1&e=XoygHR)
+  '''
+}
 Table DBO.TB_NAVITAIRE_HISTORY_CONNECTIONS{
 	ID_FUTURE_CONNECTIONS "int IDENTITY(1,1)" [not null]
 	PREVIOUS_SCHEDULED_DEPARTURE_LT_DTIME datetime [null]
